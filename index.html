@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Ms. Yendell G. Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#396ea8">
+</head>
+<body>
+  <!-- Navigation Bar & Greeting -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">HELLO THERE! :) </div>
+      <ul class="nav-links">
+  <li><a href="#page1" id="nav-home">Home</a></li>
+  <li><a href="#page2" id="nav-profile">Profile</a></li>
+  <li><a href="#page3" id="nav-contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">🌙</button>
+    </nav>
+    <div id="greeting" class="greeting"></div>
+  </header>
+  <!-- Page 1 -->
+  <section class="page" id="page1">
+    <div class="intro-card">
+      <h2>Welcome to my profile!</h2>
+      <p>
+        This site contains some of my basic information to help you get to know me better.
+        I’m glad to share a little about myself, and I look forward to connecting with others
+        through learning and collaboration.
+      </p>
+    </div>
+    <div class="img-btn-row">
+      <div class="profile-img">
+        <img src="yen1.jpg" alt="Yendell David Gainsan" />
+      </div>
+      <button class="main-btn" id="toPage2">CLICK ME!</button>
+    </div>
+  </section>
+
+  <!-- Page 2 -->
+  <section class="page hidden" id="page2">
+    <div class="profile-header">
+      <div>
+        <h3><u>Student Personal Profile:</u></h3>
+        <h4>Basic Information</h4>
+        <div class="info-list">
+          <p><b>Full Name (LN,FN, MN):</b> GAINSAN, YENDELL, DAVID</p>
+          <p><b>Home Address:</b> #147-D Saturnlane St. Mabayuan, Olongapo City, 2200</p>
+          <p><b>Date of Birth:</b> 09/23/2005</p>
+          <p><b>Place of Birth:</b> Olongapo City</p>
+          <p><b>Civil Status:</b> Single</p>
+          <p><b>Sex:</b> Female</p>
+          <p><b>Religion:</b> Iglesia Ni Cristo</p>
+          <p><b>Citizenship:</b> Filipino</p>
+          <p><b>Department/Program Course:</b> CCS/BSIT</p>
+          <p><b>Year Level:</b> 3</p>
+          <p><b>School Year:</b> 2025-2026</p>
+          <p><b>School Name:</b> Gordon College</p>
+          <p><b>School Address:</b> Olongapo City Sports Complex, Donor Street, East Tapinac</p>
+        </div>
+      </div>
+      <div class="profile-img circle">
+        <img src="yendell.jpg" alt="Yendell David Gainsan" />
+      </div>
+    </div>
+    <button class="main-btn" id="toPage3">LET’S PROCEED! <span class="arrow">→</span></button>
+  </section>
+
+  <!-- Page 3 -->
+  <section class="page hidden" id="page3">
+    <h2 class="center">Parents</h2>
+    <div class="parents-row">
+      <div class="parent-card">
+        <p><b>Father’s Name:</b> Gainsan, Joel, Abad</p>
+        <p><b>Contact No:</b> 09696445464</p>
+        <p><b>Occupation:</b> Driver/ Car4Rent</p>
+      </div>
+      <div class="parent-card">
+        <p><b>Mother’s Name:</b> Gainsan, Myla, David</p>
+        <p><b>Contact No:</b> 09569950224</p>
+        <p><b>Occupation:</b> Housewife</p>
+      </div>
+    </div>
+    <h2 class="center">About Me…</h2>
+    <div class="about-card">
+      <p>
+        I’m curious and adventurous and I love to learn and explore the world. At home I enjoy watching videos, learning about interesting science (especially animals) and exploring new places by walking around. I'm enthusiastic about travel because I get to see different cultures, different environments. Music also makes me happy, and helps me relax and get inspired. I love playing badminton, it makes me feel active and lively. I think life is an exciting adventure of discovery—I never stop trying new things and making great memories!
+      </p>
+    </div>
+    <h2 class="center contact-title">You can contact me through:</h2>
+    <div class="contact-info center">
+      <a href="tel:09696446499" class="phone-link">09696446499</a>
+      <div>or</div>
+      <div class="social-card-row">
+        <div class="social-card">
+          <a href="https://www.facebook.com/yen.david.gainsan" target="_blank" class="main-btn social-btn facebook-btn">
+            <span class="icon-facebook"></span> FACEBOOK
+          </a>
+        </div>
+        <div class="social-card">
+          <a href="https://www.instagram.com/mzdellee?igsh=NTgwOWhtaGJyenF4" target="_blank" class="main-btn social-btn instagram-btn">
+            <span class="icon-instagram"></span> INSTAGRAM
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+      <h2 class="center">Contact Me</h2>
+      <form id="contactForm" class="contact-form" autocomplete="off" novalidate>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="main-btn">Send Message</button>
+        <div id="formMsg" class="form-msg"></div>
+      </form>
+    </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
